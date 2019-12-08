@@ -83,7 +83,7 @@ body {
 }
 @media (max-width:1200px){
 
-.wrapper{
+body {
 width:auto;
 }
 }
