@@ -1,0 +1,92 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    color: #181818;
+    background-image: url(../images/square.png);
+    font-family: Verdana, Tahoma, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    font-weight: normal;
+}
+
+.wrapper {
+    width: 1200px;
+    background-color: #fffdf3;
+    color: #000288;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, auto);
+    grid-row-gap: 10px;
+    overflow: hidden;
+
+    .header {
+        margin-left: 20px;
+    }
+
+    .article {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2, auto);
+        margin-left: 10px;
+
+        .section {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+grid-gap: 10px;
+.position p{
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+            .text-left {
+                display: grid;
+                grid-template-columns: 1fr;
+                grid-template-rows: repeat(6, auto);
+            }
+
+            .text-right {
+                grid-template-columns: 1fr;
+                grid-template-rows: repeat(6, auto);
+            }
+        }
+
+        .item {
+            display: grid;
+            grid-template-columns: 30px 210px 348px;
+border:1px solid #181818;
+            div {
+                padding: 5px 10px;
+                border-bottom: 1px solid #181818;
+                border-right: 1px solid #181818;
+               
+              
+            }
+            input {
+               border:none;
+               outline: none;
+               width: 338px;
+                height: 34px;
+                border-bottom: 1px solid #181818;
+                border-right: 1px solid #181818;
+                padding-left: 10px;
+            }
+        }
+
+    }
+.lesson{
+    margin-left: 10px;
+    table{
+        table-layout: fixed;
+    border-collapse: collapse;
+  border: 1px solid rgb(0, 0, 0);
+  th, td {
+    padding: 5px 10px;
+    border: 1px solid rgb(0, 0, 0);
+  }
+    }
+}
+
+}

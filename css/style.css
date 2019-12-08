@@ -67,3 +67,16 @@ body {
   border-right: 1px solid #181818;
   padding-left: 10px;
 }
+.wrapper .lesson {
+  margin-left: 10px;
+}
+.wrapper .lesson table {
+  table-layout: fixed;
+  border-collapse: collapse;
+  border: 1px solid #000000;
+}
+.wrapper .lesson table th,
+.wrapper .lesson table td {
+  padding: 5px 10px;
+  border: 1px solid #000000;
+}
