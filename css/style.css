@@ -81,7 +81,7 @@ body {
   border: 1px solid #000000;
   text-align: center;
 }
-@media (width:1200){
+@media (width:1200px){
 
 .wrapper{
 width:auto;
