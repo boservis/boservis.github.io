@@ -11,7 +11,7 @@ body {
   font-weight: normal;
 }
 .wrapper {
-  width: 1200px;
+  max-width: 1200px;
   background-color: #fffdf3;
   color: #000288;
   margin: 0 auto;
@@ -25,59 +25,72 @@ body {
   margin-left: 20px;
 }
 .wrapper .article {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: repeat(2, auto);
   margin-left: 10px;
+  margin-right: 10px;
 }
 .wrapper .article .section {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-gap: 10px;
 }
-.wrapper .article .section .position p {
-  margin-bottom: 10px;
-  margin-top: 10px;
-}
-.wrapper .article .section .text-left {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: repeat(6, auto);
-}
-.wrapper .article .section .text-right {
-  grid-template-columns: 1fr;
-  grid-template-rows: repeat(6, auto);
-}
-.wrapper .article .item {
-  display: grid;
-  grid-template-columns: 30px 210px 348px;
-  border: 1px solid #181818;
-}
-.wrapper .article .item div {
-  padding: 5px 10px;
-  border-bottom: 1px solid #181818;
-  border-right: 1px solid #181818;
-}
-.wrapper .article .item input {
-  border: none;
-  outline: none;
-  width: 338px;
-  height: 34px;
-  border-bottom: 1px solid #181818;
-  border-right: 1px solid #181818;
-  padding-left: 10px;
-}
-.wrapper .lesson {
-  margin-left: 10px;
-}
-.wrapper .lesson table {
+.wrapper .article .section table {
   table-layout: fixed;
   border-collapse: collapse;
   border: 1px solid #000000;
+  margin-bottom: 10px;
 }
-.wrapper .lesson table th,
-.wrapper .lesson table td {
+.wrapper .article .section table td:nth-child(1) {
+  width: 30px;
+}
+.wrapper .article .section table td:nth-child(2) {
+  width: 40%;
+}
+.wrapper .article .section table td:nth-child(3) {
+  width: 60%;
+}
+.wrapper .article .section table th,
+.wrapper .article .section table td {
   padding: 5px 10px;
   border: 1px solid #000000;
+}
+.wrapper .article .section table .task {
+  background: #ffffff;
+}
+.wrapper .article .section table .position p {
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+.wrapper .article .section table .text-left {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(6, auto);
+}
+.wrapper .article .section table .text-right {
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(6, auto);
+}
+.wrapper .article .timetable {
+  margin-left: 10px;
+}
+.wrapper .article .timetable table {
+  table-layout: fixed;
+  border-collapse: collapse;
+  border: 1px solid #000000;
+  margin-bottom: 10px;
   text-align: center;
+}
+.wrapper .article .timetable table th,
+.wrapper .article .timetable table td {
+  padding: 5px 10px;
+  border: 1px solid #000000;
+}
+@media (max-width: 1200px) {
+  .wrapper {
+    width: 100%;
+  }
+}
+@media (max-width: 900px) {
+  .wrapper .article .section {
+    grid-template-columns: 1fr;
+  }
 }
