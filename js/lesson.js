@@ -27,8 +27,7 @@ $("document").ready(function() {
 function loadLesson() {
   //загрузка дом. робіт на сторінку
   $.getJSON("lesson.json", function(data) {
-    var out = "";
-    for (var key in data) {
+    for (let key in data) {
       for (let le = 0; le < 7; le++) {
         document.querySelector(clasM[le]).innerHTML = data[key][lesM[le]];
       }
@@ -41,9 +40,6 @@ function loadSubject() {
     var out = "";
     for (var key in data) {
       for (let le = 0; le < 7; le++) {
-        console.log(key);
-        console.log(lesM);
-        //  console.log(data);
         document.getElementById(lesM[le]).innerHTML = data[key][lesM[le]];
       }
     }
