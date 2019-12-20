@@ -9,205 +9,287 @@
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/normalize.css" />
   </head>
+
   <body>
     <div class="wrapper">
       <header class="header">
-        <h1>Хустська Гімназія (6-Б клас)</h1>
+        <h1>Хустська Гімназія (6-Б клас / 2гр. )</h1>
+        <div id="date-time"></div>
+        <h4 id="date-time"></h4>
       </header>
-
       <article class="article">
-        <h3>Розклад уроків: Грудень 2019 рік</h3>
+        <h3>Розклад уроків:</h3>
+
         <div class="section">
           <div class="text-left position">
-            <p>
-              <span><b>Понеділок</b></span>
-            </p>
-            <div class="monday item">
-              <div>№</div>
-              <div>Предмет</div>
-              <div>Домашнє завдання</div>
-              <div>1</div>
-              <div>Математика</div>
-              <input type="text" />
-              <div>2</div>
-              <div>Біологія</div>
-              <input type="text" />
-              <div>3</div>
-              <div>Англійська мова</div>
-              <input type="text" />
-              <div>4</div>
-              <div>Зарубіжна література</div>
-              <input type="text" />
-              <div>5</div>
-              <div>Українська мова</div>
-              <input type="text" />
-              <div>6</div>
-              <div>Музика</div>
-              <input type="text" />
-              <div>7</div>
-              <div>Історія</div>
-              <input type="text" />
-            </div>
-            <p>
-              <span><b>Вівторок</b></span>
-            </p>
-            <div class="tuesday item">
-              <div>1</div>
-              <div>Українська література</div>
-              <input type="text" />
-              <div>2</div>
-              <div>Географія</div>
-              <input type="text" />
-              <div>3</div>
-              <div>Математика</div>
-              <input type="text" />
-              <div>4</div>
-              <div>Англійська мова</div>
-              <input type="text" />
-              <div>5</div>
-              <div>Українська мова</div>
-              <input type="text" />
-              <div>6</div>
-              <div>Фізкультура</div>
-              <input type="text" />
-            </div>
-            <p>
-              <span><b>Середа</b></span>
-            </p>
-            <div class="wednesday item">
-              <div>1</div>
-              <div>Біологія</div>
-              <input type="text" />
-              <div>2</div>
-              <div>Обр. мистецтво</div>
-              <input type="text" />
-              <div>3</div>
-              <div>Українська мова</div>
-              <input type="text" />
-              <div>4</div>
-              <div>Математика</div>
-              <input type="text" />
-              <div>5</div>
-              <div>Інформатика</div>
-              <input type="text" />
-              <div>6</div>
-              <div>Хореографія</div>
-              <input type="text" />
-            </div>
+            <table>
+              <tr>
+                <th colspan="3">Понеділок</th>
+              </tr>
+              <tr style="background: #ffee9b;">
+                <td>№</td>
+                <td>Предмет</td>
+                <td>Домашнє завдання</td>
+              </tr>
+              <tr>
+                <td>1</td>
+                <td id="lesson1"></td>
+                <td class="w1-1 task"></td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td id="lesson2">Біологія</tdid="lesson1">
+                <td class="w1-2 task"></td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td id="lesson3">Англійська мова</td id="lesson2">
+                <td class="w1-3 task"></td>
+              </tr>
+              <tr>
+                <td>4</td>
+                <td id="lesson4">Зарубіжна література</td id="lesson2">
+                <td class="w1-4 task"></td>
+              </tr>
+              <tr>
+                <td>5</td>
+                <td id="lesson5">Українська мова</td id="lesson2">
+                <td class="w1-5 task"></td>
+              </tr>
+              <tr>
+                <td>6</td>
+                <td id="lesson6">Музика</td id="lesson2">
+                <td class="w1-6 task"></td>
+              </tr>
+              <tr>
+                <td>7</td>
+                <td id="lesson7">Історія</td>
+                <td class="w1-7 task"></td>
+              </tr>
+            </table>
+
+            <table>
+              <tr>
+                <th colspan="3">Вівторок</th>
+              </tr>
+              <tr>
+                <td>1</td>
+                <td id="lesson1">Українська література</td>
+                <td class="w2-1 task"></td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>Географія</td>
+                <td class="w2-2 task"></td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>Математика</td>
+                <td class="w2-3 task"></td>
+              </tr>
+              <tr>
+                <td>4</td>
+                <td>Англійська мова</td>
+                <td class="w2-4 task"></td>
+              </tr>
+              <tr>
+                <td>5</td>
+                <td>Українська мова</td>
+                <td class="w2-5 task"></td>
+              </tr>
+              <tr>
+                <td>6</td>
+                <td>Фізкультура</td>
+                <td class="w2-6 task"></td>
+              </tr>
+              <tr>
+                <td>7</td>
+                <td></td>
+                <td class="w2-7 task"></td>
+              </tr>
+            </table>
+
+            <table>
+              <tr>
+                <th colspan="3">Середа</th>
+              </tr>
+              <tr>
+                <td>1</td>
+                <td>Біологія</td>
+                <td class="w3-1 task"></td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>Обр. мистецтво</td>
+                <td class="w3-2 task"></td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>Українська мова</td>
+                <td class="w3-3 task"></td>
+              </tr>
+              <tr>
+                <td>4</td>
+                <td>Математика</td>
+                <td class="w3-4 task"></td>
+              </tr>
+              <tr>
+                <td>5</td>
+                <td>Інформатика</td>
+                <td class="w3-5 task"></td>
+              </tr>
+              <tr>
+                <td>6</td>
+                <td>Хореографія</td>
+                <td class="w3-6 task"></td>
+              </tr>
+              <tr>
+                <td>7</td>
+                <td></td>
+                <td class="w3-7 task"></td>
+              </tr>
+            </table>
           </div>
           <div class="text-right position">
-            <p>
-              <span><b>Четвер</b></span>
-            </p>
-            <div class="thursday item">
-              <div>№</div>
-              <div>Предмет</div>
-              <div>Домашнє завдання</div>
-              <div>1</div>
-              <div>Математика</div>
-              <input type="text" />
-              <div>2</div>
-              <div>Історія</div>
-              <input type="text" />
-              <div>3</div>
-              <div>Трудове навчання</div>
-              <input type="text" />
-              <div>4</div>
-              <div>Трудове навчання</div>
-              <input type="text" />
-              <div>5</div>
-              <div>Основи здоров’я</div>
-              <input type="text" />
-              <div>6</div>
-              <div>Географія</div>
-              <input type="text" />
-              <div>7</div>
-              <div></div>
-              <input type="text" />
-            </div>
-            <p>
-              <span><b>П’ятниця</b> </span>
-            </p>
-            <div class="friday item">
-              <div>1</div>
-              <div>Українська література</div>
-              <input type="text" />
-              <div>2</div>
-              <div>Математика</div>
-              <input type="text" />
-              <div>3</div>
-              <div>Українська мова</div>
-              <input type="text" />
-              <div>4</div>
-              <div>Англійська мова</div>
-              <input type="text" />
-              <div>5</div>
-              <div>Зарубіжна література</div>
-              <input type="text" />
-              <div>6</div>
-              <div>Фізкультура</div>
-              <input type="text" />
-            </div>
+            <table>
+              <tr>
+                <th colspan="3">Четверг</th>
+              </tr>
+              <tr style="background: #ffee9b;">
+                <td>№</td>
+                <td>Предмет</td>
+                <td>Домашнє завдання</td>
+              </tr>
+              <tr>
+                <td>1</td>
+                <td>Математика</td>
+                <td class="w4-1 task"></td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>Історія</td>
+                <td class="w4-2 task"></td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>Трудове навчання</td>
+                <td class="w4-3 task"></td>
+              </tr>
+              <tr>
+                <td>4</td>
+                <td>Трудове навчання</td>
+                <td class="w4-4 task"></td>
+              </tr>
+              <tr>
+                <td>5</td>
+                <td>Основи здоров’я</td>
+                <td class="w4-5 task"></td>
+              </tr>
+              <tr>
+                <td>6</td>
+                <td>Географія</td>
+                <td class="w4-6 task"></td>
+              </tr>
+              <tr>
+                <td>7</td>
+                <td></td>
+                <td class="w4-7 task"></td>
+              </tr>
+            </table>
+
+            <table>
+              <tr>
+                <th colspan="3">П’ятниця</th>
+              </tr>
+              <tr>
+                <td>1</td>
+                <td>Українська література</td>
+                <td class="w5-1 task"></td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>Математика</td>
+                <td class="w5-2 task"></td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>Англійська мова</td>
+                <td class="w5-3 task"></td>
+              </tr>
+              <tr>
+                <td>4</td>
+                <td>Українська мова</td>
+                <td class="w5-4 task"></td>
+              </tr>
+              <tr>
+                <td>5</td>
+                <td>Зарубіжна література</td>
+                <td class="w5-5 task"></td>
+              </tr>
+              <tr>
+                <td>6</td>
+                <td>Фізкультура</td>
+                <td class="w5-6 task"></td>
+              </tr>
+              <tr>
+                <td>7</td>
+                <td></td>
+                <td class="w5-7 task"></td>
+              </tr>
+            </table>
           </div>
         </div>
+
+        <lesson class="timetable">
+          <h3>Тривалість уроків та розклад дзвінків</h3>
+          <table>
+            <tr style="background: #ffee9b;">
+              <th>№ уроку</th>
+              <th>Тривалість уроків</th>
+              <th>Тривалість перерв</th>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td>8:00 - 8:45</td>
+              <td>10 хв</td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>8:55 - 9:40</td>
+              <td>10 хв</td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>9:50 - 10:35</td>
+              <td>15 хв</td>
+            </tr>
+            <tr>
+              <td>4</td>
+              <td>10:50 - 11:35</td>
+              <td>15 хв</td>
+            </tr>
+            <tr>
+              <td>5</td>
+              <td>11:50 - 12:35</td>
+              <td>10 хв</td>
+            </tr>
+            <tr>
+              <td>6</td>
+              <td>12:45 - 13:30</td>
+              <td>10 хв</td>
+            </tr>
+            <tr>
+              <td>7</td>
+              <td>13:40 - 14:25</td>
+              <td></td>
+            </tr>
+          </table>
+        </lesson>
       </article>
-      <lesson class="lesson">
-        <h3>Тривалість уроків та розклад дзвінків</h3>
-        <table>
-          <tr>
-            <th>№ уроку</th>
-            <th>Тривалість уроків</th>
-            <th>Тривалість перерв</th>
-          </tr>
-          <tr>
-            <td>1</td>
-            <td>8:00 - 8:45</td>
-            <td>10 хв</td>
-          </tr>
-          <tr>
-            <td>2</td>
-            <td>8:55 - 9:40</td>
-            <td>10 хв</td>
-          </tr>
-          <tr>
-            <td>3</td>
-            <td>9:50 - 10:35</td>
-            <td>15 хв</td>
-          </tr>
-          <tr>
-            <td>4</td>
-            <td>10:50 - 11:35</td>
-            <td>15 хв</td>
-          </tr>
-          <tr>
-            <td>5</td>
-            <td>11:50 - 12:35</td>
-            <td>10 хв</td>
-          </tr>
-          <tr>
-            <td>6</td>
-            <td>12:45 - 13:30</td>
-            <td>10 хв</td>
-          </tr>
-          <tr>
-            <td>7</td>
-            <td>13:40 - 14:25</td>
-            <td></td>
-          </tr>
-        </table>
-      </lesson>
-<script language="javascript" type="text/javascript"><!--
-var d = new Date();
-
-var day=new Array("Неділя","Понеділок","Вівторок",
-"Середа","Четверг","П`ятниця","Субота");
-
-var month=new Array("січня","лютого","березня","квітня","травня","червня",
-"липня","серпня","вересня","жовтня","листопада","грудня");
-
-document.write(day[d.getDay()]+" " +d.getDate()+ " " + month[d.getMonth()]
-+ " " + d.getFullYear() + " р.");
-//--></script>
     </div>
+
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <script src="js/lesson.js"></script>
+    <script src="js/data.js"></script>
   </body>
 </html>
