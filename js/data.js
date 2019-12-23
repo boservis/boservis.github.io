@@ -24,15 +24,6 @@ let month = new Array(
   "грудня"
 );
 
-document.getElementById("week-1").innerHTML =
-  day[d.getDay()] +
-  " " +
-  d.getDate() +
-  " " +
-  month[d.getMonth()] +
-  " " +
-  d.getFullYear() +
-  " р.";
 document.getElementById("date-time").innerHTML =
   day[d.getDay()] +
   " " +
