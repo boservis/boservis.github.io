@@ -4,7 +4,7 @@ let clasM = [];
 let lesM = [];
 week = Number(week) + 1;
 
-for (let k = 1; k < 35; k++) {
+for (let k = 1; k < 36; k++) {
   let clas = ".w" + 1 + "-" + k;
   let les = "lesson" + k;
   clasM.push(clas);
@@ -20,14 +20,14 @@ function loadLesson() {
   //загрузка дом. робіт на сторінку
   $.getJSON("lesson.json", function(data) {
     for (let key in data) {
-      for (let le = 0; le < 14; le++) {
+      for (let le = 0; le < 36; le++) {
         document.querySelector(clasM[le]).innerHTML = data[key][lesM[le]];
       }
     }
   });
 }
 let subM = [];
-for (let s = 1; s < 14; s++) {
+for (let s = 1; s < 36; s++) {
   let sub = "les-" + s;
   subM.push(sub);
 }
