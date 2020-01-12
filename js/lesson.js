@@ -4,21 +4,21 @@ let clasM = [];
 let lesM = [];
 week = Number(week) + 1;
 
-for (let k = 1; k < 36; k++) {
-  let clas = ".w" + 1 + "-" + k;
+for (let k = 0; k < 39; k++) {
+  let clas = ".w1" + "-" + k;
   let les = "lesson" + k;
   clasM.push(clas);
   lesM.push(les);
 }
 
-$("document").ready(function() {
+$("document").ready(function () {
   loadLesson();
   loadSubject();
 });
 
 function loadLesson() {
   //загрузка дом. робіт на сторінку
-  $.getJSON("lesson.json", function(data) {
+  $.getJSON("lesson.json", function (data) {
     for (let key in data) {
       for (let le = 0; le < 36; le++) {
         document.querySelector(clasM[le]).innerHTML = data[key][lesM[le]];
@@ -33,7 +33,7 @@ for (let s = 1; s < 36; s++) {
 }
 function loadSubject() {
   //загрузка предметів
-  $.getJSON("subject.json", function(data) {
+  $.getJSON("subject.json", function (data) {
     for (let key2 in data) {
       for (let le = 0; le < subM.length; le++) {
         console.log(key2);
